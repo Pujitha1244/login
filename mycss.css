@@ -1,0 +1,55 @@
+body{
+
+  padding: 0;
+  background-image: url("four.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:50px 0px; padding:0px;
+  text-align:center;
+  align:center;
+  align-items: center;
+  /* opacity: 0.5; */
+
+}
+form {
+    display: inline-block;
+}
+.total{
+  /* background-color: #fff0f0; */
+  /* background-image: url("four.jpg") ; */
+
+  position: relative;
+  top: 100px;
+  left:auto;
+  right: auto;
+  text-align: center;
+  align-items: center;
+  padding: 100px;
+
+
+}
+
+.log{
+  color: #0f3057;
+  padding-bottom: 20px
+}
+
+.mail{
+  width: 100%;
+  border-bottom: 5px;
+  padding: 10px;
+}
+
+.pass{
+  width: 100%;
+  border-style: hidden;
+  padding: 10px;
+}
+
+.ok{
+  padding: 10px;
+}
+
+.me{
+  padding: 10px
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="second.css">
+    <title>me</title>
+  </head>
+  <body>
+
+    <div class="container"
+    <div class="total">
+      <form class="" name="form1">
+
+        <div class="form-group row">
+          <label for="firstName" class="col-sm-2" id="Name"><strong><em>First Name</em></strong></label>
+          <div class="col-lg">
+            <input type="text" Name="firstName">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="LastName" class="col-sm-2 "><strong><em>Last Name</em></strong></label>
+          <div class="col-lg-10">
+            <input type="text" Name="LastName">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="phone no" class="col-sm-2 "><strong><em>Phone No</em></strong></label>
+          <div class="col-lg-10">
+            <input type="text" Name="phone">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 "><strong><em>Email</em></strong></label>
+          <div class="col-lg-10">
+            <input type="email" Name="mail" value="">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="gender" class="col-sm-2 "><strong><em>Gender</em></strong></label>
+          <div class="col-lg-10">
+            <select class="" name="Gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 "><strong><em>Address</em></strong></label>
+          <div class="col-lg-10">
+            <input type="email" name="" value="">
+          </div>
+        </div>
+
+            <div class="form-group row">
+              <label for="city" class="col-sm-2"><strong><em>City</em></strong></label>
+              <div class="col-lg-10">
+              <select name="City" id="city">
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Chennai">Chennai</option>
+              </select>
+          </div>
+        </div>
+
+            <div class="form-group row">
+              <label for="state" class="col-sm-2"><strong><em>State</em></strong></label>
+              <div class="col-lg-10">
+              <select name="states" id="states">
+                <option value="Telangana">Telangana</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+              </select><br>
+              <div class="submit1">
+              <button type="button" class="btn btn-success" onclick="display();" name="button">Submit</button>
+            </div>
+            </div>
+          </div>
+
+          <script LANGUAGE="JavaScript" type="text/javascript">
+          function display() {
+            DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+            message = "<ul><li><b>NAME: </b>" + document.form1.firstName.value;
+            message += "<li><b>ADDRESS: </b>" + document.form1.LastName.value;
+            message += "<li><b>MAIL: </b>" + document.form1.mail.value + "</ul>";
+            DispWin.document.write(message);
+          }
+          </script>
+
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
